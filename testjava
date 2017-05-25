@@ -1,0 +1,6 @@
+void validateTime(long microseconds) {
+final long perDay = 24 * 60 * 60 * 1000 * 1000;
+if (microseconds > perDay) {
+throw new RuntimeException("too long delay");
+}
+}
